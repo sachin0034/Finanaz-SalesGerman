@@ -294,14 +294,14 @@ exports.GetAllVoices = async (req, res, next) => {
   res.status(200).json({
     voices: [
       {
-        voice_id: 2,
-        name: "jen-english",
+        voice_id: "86812f09-28f0-4538-aa25-5d309e0e6e5d",
+        name: "Male",
         is_custom: false,
         reduce_latency: true,
       },
       {
-        voice_id: 0,
-        name: "matt",
+        voice_id: "13843c96-ab9e-4938-baf3-ad53fcee541d",
+        name: "Female",
         is_custom: false,
         reduce_latency: true,
       },
