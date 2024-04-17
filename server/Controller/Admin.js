@@ -333,8 +333,6 @@ exports.SingleCall = async (req, res, next) => {
     voice_id: 1,
     reduce_latency: false,
     transfer_phone_number: "+" + transferCountryCode + transferPhoneNumber,
-    // language: "german",
-    "language": "ger",
   };
 
   axios
@@ -412,8 +410,7 @@ exports.BulkCall = async (req, res, next) => {
             task: prompt,
             voice_id: voice,
             reduce_latency: false,
-            transfer_phone_number: "+" + transferCountryCode + transferPhoneNumber, // Assumed correct formatting from input
-            "language": "ger",
+            transfer_phone_number: "+" + transferCountryCode + transferPhoneNumber, 
           };
         })
         .filter((call) => call !== null);
